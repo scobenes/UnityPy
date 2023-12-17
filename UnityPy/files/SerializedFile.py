@@ -235,7 +235,7 @@ class SerializedFile(File.File):
 
         if header.version >= 7:
             unity_version = reader.read_string_to_null()
-            self.set_version(unity_version)
+            self.set_version("2020.3.47f1")
 
         if header.version >= 8:
             self._m_target_platform = reader.read_int()
